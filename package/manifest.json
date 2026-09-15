@@ -1,6 +1,6 @@
 {
   "name": "Carturs_Follow_Command",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/jekkle/cartur-follow-command",
   "description": "Every tamed animal takes the follow/stay command, not just wolves and lox. Press Use on a tamed boar, chicken or asksvin and it follows you. Uses the game's own follow system, so it survives relogs and covers modded creatures for free.",
   "dependencies": [
