@@ -6,7 +6,8 @@
 [Map Pins](https://thunderstore.io/c/valheim/p/Cartur/Carturs_Map_Pins/) ·
 [Compass and Clock](https://thunderstore.io/c/valheim/p/Cartur/Carturs_Compass_and_Clock/) ·
 [Safe Stamina](https://thunderstore.io/c/valheim/p/Cartur/Carturs_Safe_Stamina/) ·
-[Flooring](https://thunderstore.io/c/valheim/p/Cartur/Carturs_Flooring/)
+[Flooring](https://thunderstore.io/c/valheim/p/Cartur/Carturs_Flooring/) ·
+[UI HUD](https://thunderstore.io/c/valheim/p/Cartur/Carturs_UI_HUD/)
 
 Every tamed animal takes the follow command, not just wolves and lox.
 
