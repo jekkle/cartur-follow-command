@@ -1,0 +1,36 @@
+# Publishing config for the Thunderstore CLI (tcli), used by tools/publish.ps1.
+#
+# Only the listing metadata lives here. pack.ps1 builds the package exactly as before
+# and tcli uploads that zip with `publish --file`, so there is one packer and what
+# ships is the file that was tested.
+#
+# version_number below is never read: with `publish --file` tcli takes the version
+# from the manifest.json inside the zip. package/manifest.json stays the one place a
+# version is edited.
+
+[package]
+namespace = "Cartur"
+name = "Carturs_Follow_Command"
+version_number = "0.0.0"
+description = "Every tamed animal takes the follow/stay command, not just wolves and lox. Press Use on a tamed boar, chicken or asksvin and it follows you. Uses the game's own follow system, so it survives relogs and covers modded creatures for free."
+website_url = "https://github.com/jekkle/cartur-follow-command"
+contains_nsfw_content = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2333"
+
+[build]
+icon = "package/icon.png"
+readme = "package/README.md"
+out_dir = "dist"
+
+[[build.copy]]
+source = "package/plugins"
+target = "plugins"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["valheim"]
+
+[publish.categories]
+valheim = ["ai-generated", "mods", "tweaks"]
