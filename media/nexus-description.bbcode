@@ -1,0 +1,46 @@
+[size=4][b]Every tamed animal takes the follow command, not just wolves and lox.[/b][/size]
+
+Walk up to a tamed animal and press [b]Use[/b] (E by default).
+
+[list]
+[*]First press - [i]"follows"[/i]. It walks after you.[/*]
+[*]Second press - [i]"stays"[/i]. It holds position.[/*]
+[/list]
+
+Boars, chickens, hens, asksvin, and anything a creature mod adds. Same key, same two messages, same behaviour you already know from a wolf. There is no extra keybind to learn and nothing to configure.
+
+[size=4][b]Worth knowing[/b][/size]
+
+[b]It survives relogs.[/b] Who an animal is following is written to its save data, and the game re-issues the command when the world loads. Park a boar at the copper mine, log out, come back - it is still waiting, and still yours.
+
+[b]It works on a server.[/b] The command goes through the game's own networked call, so other players see the animal move and the follow state is shared.
+
+[b]Petting still works.[/b] The pet effect plays on every press either way; what changes is that the press now also toggles follow.
+
+[b]Modded creatures are covered for free.[/b] Nothing here is a list of animal names - the switch is flipped on the component every tameable creature has, so a creature mod's new pet behaves like a vanilla one on the day it installs.
+
+[size=4][b]How it works[/b][/size]
+
+Follow-and-stay was never a wolf feature. It is a Tameable feature, and the entire mechanism already ships in the base game - the command, the AI that walks the animal after you, the two on-screen messages, the networking, and the save that survives a relog. The only thing separating a wolf from a boar is a single m_commandable checkbox that Iron Gate ticked on some creature prefabs and not others.
+
+So this mod does not implement following. It ticks the checkbox on every tamed creature and lets the game do what it already knew how to do. That is why there is no new keybind, no config file, and nothing here to drift out of sync when the game updates.
+
+[size=4][b]Compatibility[/b][/size]
+
+Nothing is replaced and no original method is skipped - one value is set after the game finishes reading it from the prefab. Taming mods, pet mods and creature mods all stack fine: anything with a Tameable component gets the command, whoever added it.
+
+[size=4][b]Installation[/b][/size]
+
+Requires BepInEx. Unpack into your Valheim folder so the DLL lands in BepInEx/plugins.
+
+[size=4][b]More from Cartur[/b][/size]
+
+[url=https://www.nexusmods.com/valheim/mods/3679]HD Blood[/url] - higher resolution ground blood and a real burst on every hit.
+[url=https://www.nexusmods.com/valheim/mods/3681]Map Pins[/url] - pins the world onto your map as you explore it.
+[url=https://www.nexusmods.com/valheim/mods/3684]Compass and Clock[/url] - a compass bar across the top of the screen.
+[url=https://www.nexusmods.com/valheim/mods/3685]Safe Stamina[/url] - stamina costs nothing while no enemy is near.
+[url=https://www.nexusmods.com/valheim/mods/3760]Flooring[/url] - floors keep the rain off, and fires sit on them.
+[url=https://www.nexusmods.com/valheim/mods/3779]UI - HUD[/url] - a hand-drawn bronze HUD you can arrange in game.
+[url=https://www.nexusmods.com/valheim/mods/3888]Waste Management[/url] - a trash can and a sort button in the inventory.
+
+Free, and always will be - if it improved your game you can [url=https://www.patreon.com/c/cartur]tip me on Patreon[/url].

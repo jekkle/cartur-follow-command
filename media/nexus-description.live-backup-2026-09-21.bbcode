@@ -1,0 +1,26 @@
+[size=4]More from Cartur: [url=https://www.nexusmods.com/valheim/mods/3679]HD Blood[/url], [url=https://www.nexusmods.com/valheim/mods/3681]Map Pins[/url], [url=https://www.nexusmods.com/valheim/mods/3684]Compass and Clock[/url], [url=https://www.nexusmods.com/valheim/mods/3685]Safe Stamina[/url], [url=https://www.nexusmods.com/valheim/mods/3760]Flooring[/url][/size]
+Every tamed animal takes the follow command, not just wolves and lox.
+
+Press your Use key (E by default) on a tamed animal. First press and it walks after you; press again and it stays where it is. Same key, same two messages, same behaviour you already know from a wolf - boars, chickens, hens, asksvin, and anything a creature mod adds.
+
+[size=4][b]Worth knowing[/b][/size]
+
+[b]It survives relogs.[/b] Who an animal is following is written to its save data, and the game re-issues the command when the world loads. Park a boar at the copper mine, log out, come back, and it is still waiting.
+
+[b]It works on a server.[/b] The command goes through the game's own networked call, so other players see the animal move and the follow state is shared.
+
+[b]Modded creatures are covered for free.[/b] Nothing here is a list of animal names, so a creature mod's new pet behaves like a vanilla one on the day it installs.
+
+[size=4][b]How it works[/b][/size]
+
+Follow-and-stay was never a wolf feature. It is a Tameable feature, and the whole mechanism already ships in the base game - the command, the AI that walks the animal after you, the two on-screen messages, the networking, and the save that survives a relog. The only thing separating a wolf from a boar is a single m_commandable checkbox that Iron Gate ticked on some creature prefabs and not others. This mod ticks it on every tamed creature and lets the game do what it already knew how to do. That is why there is no new keybind and no config file.
+
+[size=4][b]Installation[/b][/size]
+
+Requires BepInEx. Drop CarturFollowCommand.dll into BepInEx/plugins. Also on Thunderstore if you use r2modman or the Thunderstore Mod Manager.
+
+[size=4][b]Compatibility[/b][/size]
+
+Nothing is replaced and no original method is skipped - one value is set after the game finishes reading it from the prefab. Taming mods, pet mods and creature mods all stack fine.
+
+Built with AI assistance.

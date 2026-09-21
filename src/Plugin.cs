@@ -8,7 +8,7 @@ namespace CarturFollowCommand
     {
         public const string PluginGuid = "com.jekkle.valheim.carturfollowcommand";
         public const string PluginName = "Cartur's Follow Command";
-        public const string PluginVersion = "1.0.1";
+        public const string PluginVersion = "1.0.2";
 
         private void Awake()
         {
